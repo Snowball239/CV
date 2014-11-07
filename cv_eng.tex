@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{moderncv}
+
+\usepackage[%
+  paper=a4paper,
+  nohead=true,
+  includefoot=true,
+  left=18mm,
+  right=18mm,
+  top=18mm,
+  bottom=18mm,
+  footskip=10mm
+]{geometry}
+\usepackage[utf8]{inputenc}
+
+\moderncvtheme[blue]{classic}
+\definecolor{see}{rgb}{0.5,0.5,0.5}
+\sethintscolumnlength{0.175\textwidth}
+
+\firstname {Alexander}
+\familyname{Polovtcev}
+\title     {Developer}
+\phone     {+7 (921) 340-55-39}
+\email     {alex.polovtcev [AT] gmail.com}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\let\ssection\section
+\renewcommand{\section}[1]{\vspace*{-2ex}\ssection{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Education}}
+%
+\cventry{2012 -- 2014}
+        {Master's Degree \textit{magna cum laude} in Software Engineering}
+        {Department of Computer Systems and Software Engineering}
+        {Saint-Petersburg State Polytechnical University}
+        {Russia}{}
+
+%
+\cvitem{---}
+       {\textsc{Master Thesis}}
+\cvitem{title}
+       {\emph{Instrumentation environment for program analysis}}
+\cvitem{description}
+       {\small }
+%
+\cventry{2008 -- 2012}
+        {Bachelor's Degree \textit{magna cum laude} in Computer Science}
+        {Department of Computer Systems and Software Engineering}
+        {Saint-Petersburg State Polytechnical University}
+        {Russia}{}
+%
+\cvitem{---}
+       {\textsc{Undergraduate Thesis}}
+\cvitem{title}
+       {\emph{}
+       }
+\cvitem{description}
+       {\small }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Experience}}
+%
+\cvitem{}{\textsc{Research \& Development}}
+%
+
+\cvitem{Sep 2014 -- \\ now}
+{\textbf{Saint-Petersburg State Polytechnical University}\newline
+ \textit{Development of enterprise information system}\newline
+         Front-end developer}
+
+\cvitem{Jan -- Aug 2014}
+{\textbf{Saint-Petersburg State Polytechnical University}\newline
+ \textit{Project on dynamic analysis tool based on program trace visualization}
+ \newline Developer of program code instrumentation system}
+
+\cvitem{Oct --  Nov 2013}
+{\textbf{Saint-Petersburg State Polytechnical University}\newline
+ \textit{Development of trace log analysis and visualization tool}
+ \newline Developer}
+
+\cvitem{Oct 2012 --\\ Aug 2013}
+{\textbf{Saint-Petersburg State Polytechnical University}\newline
+ \textit{Development of DSL translator for describing function semantics}
+ \newline Developer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Personal Skills}}
+%
+\cvitem{}{\textbf{Operating Systems}}
+\cvitem{}{Linux, Windows}
+%
+\cvitem{}{\textbf{Programming Languages}}
+\cvitem{Proficient}{Java, C++}
+\cvitem{Familiar}{Python, C}
+\cvitem{Basic}{SML, Lisp, Erlang}
+%
+\cvitem{}{\textbf{Tools}}
+\cvitem{VCS}{Mercurial, Git}
+\cvitem{Build Systems}{Maven, Make}
+\cvitem{Databases}{PostgreSQL, Apache Derby, MongoDB}
+%
+\cvitem{}{\textbf{Office}}
+\cvitem{}{\LaTeX, LibreOffice}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Language skills}}
+%
+\cvitem{Russian}{Native}
+\cvitem{English}{Fluent}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Miscellaneous}}
+%
+\cvitem{Linkedin}
+       {{\color{see}\url{ru.linkedin.com/pub/alexander-polovtcev/80/829/627/}}}
+\cvitem{Twitter}
+       {{\color{see}\url{https://twitter.com/sasha_polo}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Publications}}
+%
+\cvitem{}{\textsc{Conference talks}}
+\cvitem{2014}
+       {Aleksandr Polovtcev, Tatyana Krikun, Tatyana Wert, Aleksey Zozulya, Vladimir Itsykson.
+\textit{Visualization of parallel program execution for software behavior analysis and defect detection}
+        // In Proceedings of the 10th Central and Eastern European Software
+        Engineering Conference in Russia~(CEE-SECR~'14)
+        --- TBP}
+
+\end{document}

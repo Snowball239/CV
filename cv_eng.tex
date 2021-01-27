@@ -1,154 +1,107 @@
-\documentclass[12pt,a4paper]{moderncv}
-
-\usepackage[%
-  paper=a4paper,
-  nohead=true,
-  includefoot=true,
-  left=18mm,
-  right=18mm,
-  top=18mm,
-  bottom=18mm,
-  footskip=10mm
-]{geometry}
-\usepackage[utf8]{inputenc}
-
+\documentclass{moderncv}
 \moderncvtheme[blue]{classic}
-\definecolor{see}{rgb}{0.5,0.5,0.5}
-\sethintscolumnlength{0.175\textwidth}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage[scale=0.85]{geometry}
+\recomputelengths
 
-\firstname {Alexander}
-\familyname{Polovtcev}
-\title     {Developer}
-\phone     {+7 (921) 340-55-39}
-\email     {alex.polovtcev [AT] gmail.com}
+% Personal info
+\firstname{Aleksandr}
+\familyname{Polovtsev}
+\title{Backend developer}
+\phone[mobile]{+7 (921) 340-55-39}
+\email{alex.polovtcev@gmail.com}
+\photo[80pt]{photo.jpg}
+\social[github]{sashapolo}
+\social[linkedin]{aleksandr-polovtsev}
 
 \begin{document}
+\makecvtitle
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Work experience
+\section{Experience}
 
-\let\ssection\section
-\renewcommand{\section}[1]{\vspace*{-2ex}\ssection{#1}}
+\cventry{May 2015 -- Sep 2020}
+		{Senior Java developer}
+		{Genestack}
+		{Saint-Petersburg}
+		{Russia}
+		{Development of a data management platform. \newline{} Responsibilities and achievements:
+		\begin{itemize}
+			\item Created an application for browsing customer data, order of magnitude faster than the previous prototype, later
+			used as one of the selling points of the platform;
+			\item Maintained and improved a data ingestion pipeline into Apache Solr;
+			\item Developed a spreadsheet application for working with metadata;
+			\item Managed integration with clients' internal systems which lead to a successful go-live on time;
+			\item Performed basic team lead tasks like writing design documents with detailed subtasks, doing code review 
+			and managing one-on-one meetings with team members;   
+  			\item Participated in job interviews.
+		\end{itemize}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\maketitle
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cventry{Oct 2012 -- May 2015}
+		{Full stack developer}
+		{Saint-Petersburg State Polytechnical University}
+		{Saint-Petersburg}
+		{Russia}
+		{\begin{itemize}
+			\item Development of an enterprise information system using Django framework;
+			\item Development of a dynamic analysis tool based on program trace visualization using Clang API;
+  			\item Development of a DSL translator for describing function semantics.
+		\end{itemize}}
 
-\section{\textsc{Education}}
-%
+% Job skills
+\section{Skills}
+
+\subsection{Programming languages}
+\cvitem{Proficient}{Java, Kotlin, Python}
+\cvitem{Familiar}{C++, SQL}
+\cvitem{Basic}{Bash}
+
+\subsection{Platforms, frameworks and other technologies}
+\cvitem{Frameworks}{Spring, Spring Boot}
+\cvitem{Databases and search engines}{MySQL, Apache Solr, ClickHouse}
+\cvitem{Testing}{Junit, Mockito, Testcontainers}
+\cvitem{VCS}{Git}
+\cvitem{Build Systems}{Maven, Gradle}
+
+% Education
+\section{Education}
+
 \cventry{2012 -- 2014}
-        {Master's Degree \textit{magna cum laude} in Software Engineering}
-        {Department of Computer Systems and Software Engineering}
-        {Saint-Petersburg State Polytechnical University}
-        {Russia}{}
+        {Master's Degree  in Software Engineering}
+        {Department of Computer Systems and Software Engineering, Saint-Petersburg State Polytechnical University}
+        {Saint-Petersburg, Russia}
+        {\textit{magna cum laude}}
+        {}
 
-%
-\cvitem{---}
-       {\textsc{Master Thesis}}
-\cvitem{title}
-       {\emph{Instrumentation Environment for Program Analysis}}
-\cvitem{description}
-       {\small Software system for program characteristics analysis and
+\cventry{2008 -- 2012}
+        {Bachelor's Degree in Software Engineering}
+        {Department of Computer Systems and Software Engineering, Saint-Petersburg State Polytechnical University}
+        {Saint-Petersburg, Russia}
+        {\textit{magna cum laude}}
+        {}
+
+\section{Master thesis}
+
+\cvitem{title}{\emph{Instrumentation Environment for Program Analysis}}
+\cvitem{description}{Software system for program characteristics analysis and
        visualization based on language-independent metamodel. Developed
        prototype supported several visualization types (CFG view, UML class
        diagrams) and simple metric calculations for programs written in Java and C.}
-%
-\cventry{2008 -- 2012}
-        {Bachelor's Degree \textit{magna cum laude} in Software Engineering}
-        {Department of Computer Systems and Software Engineering}
-        {Saint-Petersburg State Polytechnical University}
-        {Russia}{}
-%
-\cvitem{---}
-       {\textsc{Undergraduate Thesis}}
-\cvitem{title}
-       {\emph{Development of Hardware and Software Tools for Mobile Testing System}}
-\cvitem{description}
-       {\small Development of some tools for an existing mobile system for
-       testing uncommitted logic arrays including test loading hardware and GUI.}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Other skills and interests
+\section{Languages}
+\cvlanguage{Russian}{Native}{}
+\cvlanguage{English}{Fluent}{}
+\cvlanguage{French}{Beginner}{}
 
-\section{\textsc{Experience}}
-%
-\cvitem{}{\textsc{Research \& Development}}
-%
+\section{Personal interests}
+\cvitem{Sport}{Olympic weightlifting, running}
+\cvitem{Learning}{Learning something new through online courses at sites like \href{https://www.coursera.org/}{Coursera} or \href{https://www.udemy.com/}{Udemy}}
 
-\cvitem{Sep 2014 -- \\ now}
-{\textbf{Saint-Petersburg State Polytechnical University}\newline
- \textit{Development of enterprise information system.}\newline
-         Front-end developer. My responsibilities included business-process logic and Web UI
-         development using Django.}
-
-\cvitem{Jan -- Aug 2014}
-{\textbf{Saint-Petersburg State Polytechnical University}\newline
- \textit{Project on dynamic analysis tool based on program trace visualization.}
- \newline Developer of program code instrumentation system based on Clang API.}
-
-\cvitem{Oct --  Nov 2013}
-{\textbf{Saint-Petersburg State Polytechnical University}\newline
- \textit{Development of trace log analysis and visualization tool.}
- \newline Developer.}
-
-\cvitem{Oct 2012 --\\ Aug 2013}
-{\textbf{Saint-Petersburg State Polytechnical University}\newline
- \textit{Development of DSL translator for describing function semantics.}
- \newline Developer.}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{\textsc{Personal Skills}}
-%
-\cvitem{}{\textbf{Operating Systems}}
-\cvitem{}{Linux, Windows}
-%
-\cvitem{}{\textbf{Programming Languages}}
-\cvitem{Proficient}{C++, Python, Java}
-\cvitem{Familiar}{C, Bash, SQL}
-\cvitem{Basic}{Scala, JavaScript, Lisp, Erlang}
-%
-\cvitem{}{\textbf{Platforms, Frameworks and Technologies}}
-\cvitem{}{Java SE, Java EE, Arquillian, JUnit, Django, ANTLR, HTML+CSS}
-%
-\cvitem{}{\textbf{Tools}}
-\cvitem{VCS}{Mercurial, Git}
-\cvitem{Build Systems}{Maven, Make}
-\cvitem{Databases}{PostgreSQL, Apache Derby, MongoDB}
-%
-\cvitem{}{\textbf{Office}}
-\cvitem{}{\LaTeX, LibreOffice}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{\textsc{Language skills}}
-%
-\cvitem{Russian}{Native}
-\cvitem{English}{Fluent}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{\textsc{Miscellaneous}}
-%
-\cvitem{Linkedin}
-       {{\color{see}\url{ru.linkedin.com/pub/alexander-polovtcev/80/829/627/}}}
-\cvitem{HeadHunter}
-       {{\color{see}\url{http://spb.hh.ru/resume/cb1143fdff022f58ed0039ed1f6f4a5a43484c}}}
-\cvitem{GitHub}
-       {{\color{see}\url{https://github.com/Snowball239}}}
-\cvitem{BitBucket}
-       {{\color{see}\url{https://bitbucket.org/Snowball239}}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{\textsc{Publications}}
-%
-\cvitem{}{\textsc{Conference talks}}
-\cvitem{2014}
-    {Aleksandr Polovtcev, Tatyana Krikun, Tatyana Vert, Aleksey Zozulya, Vladimir Itsykson.
-    \textit{Visualization of parallel program execution for software behavior analysis and defect detection}
-    // CEE-SECR '14 Proceedings of the 10th Central and Eastern European Software Engineering Conference in Russia
-    // Article No. 24
-    // ACM New York, NY, USA ©2014
-    // ISBN: 978-1-4503-2889-0
-}
+% Bibliography
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
 
 \end{document}
